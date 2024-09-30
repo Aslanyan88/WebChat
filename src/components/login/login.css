@@ -1,0 +1,115 @@
+body {
+    overflow: hidden; 
+  }
+  
+  .Toastify__toast-container {
+    position: fixed; 
+    z-index: 9999;
+    pointer-events: none; 
+  }
+  
+  .Toastify__toast {
+    pointer-events: auto; 
+  }
+    .login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #f4f6f8;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .login .item {
+    width: 45%;
+    padding: 20px;
+  }
+  
+  .login h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .login form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .login input:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 8px rgba(26, 115, 232, 0.2);
+  }
+  
+  .login button {
+    padding: 12px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:disabled{
+      cursor:not-allowed;
+      background-color:#1a73e823;
+    }
+  }
+  
+  .login button:hover {
+    background-color: #165ab6;
+  }
+  
+  .login button:active {
+    background-color: #144a96;
+  }
+  
+  .login .seperator {
+    width: 2px;
+    background-color: #ddd;
+    height: 100%;
+    margin: 0 20px;
+  }
+  
+  .login img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .login label {
+    text-align: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: #1a73e8;
+    font-weight: 500;
+  }
+  
+  .login input[type="file"] {
+    display: none;
+  }
+  
